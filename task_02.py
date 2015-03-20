@@ -4,7 +4,7 @@
 
 
 def bool_to_str(bval):
-    """making a fibonacci sequence with a while loop up to maxint.
+    """making a boolean function with if and else.
 
     Args:
         bval (boolean): evaluates the truthiness or falsiness
