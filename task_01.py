@@ -8,9 +8,9 @@ def fibonacci(maxint):
 
     Args:
         maxint (int): upper bound of the loop
-        a (int): values
-        b (int): values
-        result (list): list of numbers
+        a (int): default value = 0
+        b (int): default value = 1
+        seq (list): list of numbers
 
     returns:
         list: values for b
