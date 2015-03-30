@@ -18,7 +18,7 @@ def bool_to_str(bval):
         >>>bool_to_str(True)
         >>>'Yes'
     """
-    if bval is True:
-        return "Yes"
-    else:
-        return "No"
+    retval = 'No'
+    if bval:
+        retval = 'Yes'
+    return retval
