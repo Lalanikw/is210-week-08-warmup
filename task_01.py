@@ -3,11 +3,6 @@
 """fibonacci sequence"""
 
 
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""fibonacci sequence"""
-
-
 def fibonacci(maxint):
     """making a fibonacci sequence with a while loop up to maxint.
 
@@ -24,9 +19,11 @@ def fibonacci(maxint):
         >>>fibonacci(10)
         >>>> [0, 1, 1, 2, 3, 5, 8]
     """
-    a, b = 0, 1
-    fibo = [a, b]
+    retval = []
+    a = 0
+    b = 1
+    retval.append(a)
     while b < maxint:
+        retval.append(b)
         a, b = b, a+b
-        fibo.append(b)
-    print fibo
+    return retval
