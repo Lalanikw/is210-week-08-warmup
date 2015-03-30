@@ -17,7 +17,7 @@ def lexicographics(to_analyze):
     examples:
         >>>>>> lexicographics('''Don't stop believing,
             Hold on to that feeling.''')
-        >>>(5, 3, Decimal('4'))
+        >>>(17, 3, Decimal('10'))
     """
     line_list = to_analyze.split('\n')
     min_word = 0
@@ -31,5 +31,5 @@ def lexicographics(to_analyze):
         if word_count > max_word:
             max_word = word_count
         total_words = total_words + word_count
-    average = Decimal(total_words) / Decimal(len(line_list))
+    average = decimal.Decimal(total_words) / decimal.Decimal(len(line_list))
     return (max_word, min_word, average)
